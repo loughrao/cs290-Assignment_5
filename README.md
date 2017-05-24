@@ -12,7 +12,7 @@ Your first job for this assignment is to write a Handlebars template partial for
 
 ## Write a template for a page to display twits:
 
-Next, you should write a template in `views/twitPage.handlebars` that implements the body of a page for displaying twits.  This page should match the main Tweeter page of the assignments we've been working on to now in the course.  In particular, it should contain the following things:
+Next, you should write a Handlebars template in `views/twitPage.handlebars` that implements the body of a page for displaying twits.  This page should match the main Tweeter page of the assignments we've been working on to now in the course.  In particular, it should contain the following things:
   * The header (from the already-defined partial in `views/partials/header.handlebars`).
   * The main twit container, with all of the supplied twits displayed within.
   * The create-twit modal (from the already-defined partial in `views/partials/createTwitModal.handlebars`).  The inclusion of the modal is optional and should be controlled with an argument passed into the template, as described below.
