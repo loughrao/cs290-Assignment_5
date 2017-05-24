@@ -27,13 +27,13 @@ You should write an Express server in the file `server.js`.  The server should d
 
   * It should use a `require` call to import the twit data from `twitData.json`.
 
-  * It should statically serve files from the `public/` directory out of the root URL path ('/').  For example, the file `public/style.css` should be available at the URL path '/style.css'.
+  * It should statically serve files from the `public/` directory out of the root URL path ('`/`').  For example, the file `public/style.css` should be available at the URL path '`/style.css`'.
 
-  * It should route the root path ('/') to the twit page implemented in `views/twitPage.handlebars`.  In this case, all of the twits from `twitData.json` should be displayed, and the create-twit modal *should* be displayed.
+  * It should route the root path ('`/`') to the twit page implemented in `views/twitPage.handlebars`.  In this case, all of the twits from `twitData.json` should be displayed, and the create-twit modal *should* be displayed.
 
-  * It should route a dynamic path '/twits/<INDEX>' to the twit page implemented in `views/twitPage.handlebars`.  In this case, if '<INDEX>' is an integer corresponding to the array index of one of the twits in `twitData.json`, only that twit should be displayed on the twit page, and the create-twit modal *should NOT* be displayed.
+  * It should route a dynamic path '`/twits/<INDEX>`' to the twit page implemented in `views/twitPage.handlebars`.  In this case, if '`<INDEX>`' is an integer corresponding to the array index of one of the twits in `twitData.json`, only that twit should be displayed on the twit page, and the create-twit modal *should NOT* be displayed.
 
-  * It should route any non-existent path, including '/notes/<INDEX>' for any value of '<INDEX>' that is not an integer corresponding to the array index of one of the twits in `twitData.json`, to the 404 page implemented in `views/404Page.handlebars`.  In this case, a 404 status should be returned.
+  * It should route any non-existent path, including '`/notes/<INDEX>`' for any value of '`<INDEX>`' that is not an integer corresponding to the array index of one of the twits in `twitData.json`, to the 404 page implemented in `views/404Page.handlebars`.  In this case, a 404 status should be returned.
 
   * It should listen on the port specified by the `PORT` environment variable or on port 3000 if the `PORT` environment variable is note defined.
 
@@ -92,7 +92,7 @@ The assignment is worth 100 points total:
 
   * 60 points: the server is correctly implemented
     * 10 points: all files in `public/` are served statically at the appropriate path
-    * 15 points: the root URL path ('/') is routed to the twit page, and all twits from `twitData.json` are displayed there, as is the create-twit modal
-    * 20 points: the dynamic path '/twits/<INDEX>' is routed to an individual twit page with no create-twit modal, as described above
-    * 10 points: any other unhandled path (including '/twits/<INDEX>' for an unknown index value) is routed to the 404 page, and a 404 status is returned
+    * 15 points: the root URL path ('`/`') is routed to the twit page, and all twits from `twitData.json` are displayed there, as is the create-twit modal
+    * 20 points: the dynamic path '`/twits/<INDEX>`' is routed to an individual twit page with no create-twit modal, as described above
+    * 10 points: any other unhandled path (including '`/twits/<INDEX>`' for an unknown index value) is routed to the 404 page, and a 404 status is returned
     * 5 points: the server listens on the port specified by the `PORT` environment variable with a default port of 3000
