@@ -1,6 +1,6 @@
 # Assignment 5
 
-**Assignment and Code Blog entry due at 11:59pm on Monday, 6/4/2017**
+**Assignment and Code Blog entry due at 11:59pm on Monday, 6/5/2017**
 
 **This assignment will not be demoed.**
 
