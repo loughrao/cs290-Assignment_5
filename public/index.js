@@ -94,7 +94,7 @@ function insertNewTwit() {
 
       var newTwitElem = generateNewTwitElem(twitText, twitAttribution);
       var twitContainer = document.querySelector('.twit-container');
-      twitContainer.appendChild(newTwitElem);
+      twitContainer.insertAdjacentHTML('beforeend', newTwitElem);
       allTwitElems.push(newTwitElem);
 
       closeCreateTwitModal();
